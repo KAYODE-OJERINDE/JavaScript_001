@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lng="en">
+    <title>Binta Prints</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewpoint" content="device-width, inintial-scale=1">
+    <style>
+        /* adding style to the tab */
+        .tab{
+            overflow: hidden;
+            border: 1px solid;
+            background-color: greenyellow;
+        }
+        .tab button{
+            background-color: aliceblue;
+            outline: none;
+            border: none;
+            float: left;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.20s;
+            color: black;
+            font: 500 16px Lato, Arial;
+        }
+        .tab button:hover{
+            background-color: aliceblue;            
+        }
+        .tab button.active{
+            background-color: yellowgreen;
+        }
+        .tabcontent{
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid yellowgreen;
+            border-top: none;
+        }
+        h1 {
+            text-align: center;
+            font-size: 40pt;
+            background-color: lightgoldenrodyellow;
+            text-shadow: 20ch;
+        }
+    </style>
+<head>
+<h1>We design and customize classy kits</h1>
+<h2>Can I really do this?</h2>
+<!-- Tab links -->
+<div class="tab">
+<button class="tablinks" onclick="OpenInfo(event, 'About us')">About us</button>
+<button class="tablinks" onclick="OpenInfo(event, 'Vision')">Vision</button>
+<button class="tablinks" onclick="OpenInfo(event, 'Mision')">Mision</button>
+<button class="tablinks" onclick="OpenInfo(event, 'Contact us')">Contact us</button>
+</div>
+<!-- Add content to tabs-->
+<div class="tabcontent" id="About us">
+    <h3>About us</h3>
+    <p>Binta prints is a leading Art and Design plug in Abeokuta metropolis and environment</p>
+    <p>We specialize in quality and trending prints and art works. We deliver classy interior 
+        decoration services, outdoor decorations, mug designs, and bulk production of customied 
+        wears for individuals and organizations</p>
+</div>
+<div class="tabcontent" id="Vision">
+    <h3>Vision</h3>
+    <p>To be the leading Art and Design plug in Nigeria and the African continent</p>
+</div>
+<div class="tabcontent" id="Mision">
+    <h3>Mision</h3>
+    <p>To ensure every individual and corporate organizations wear their brand ID always</p>
+</div>
+<div class="tabcontent" id="Contact us">
+    <h3>Contact us</h3>
+    <br>Talk to us on +2349023456789, +2348012345678
+    <br><a href="mailto: danieloluwakayode@gmail.com">email</a>
+    <br><a href="https://www.linkedin.com/in/kayode-ojerinde6318">LinkedIn</a>
+    <br><a href="https://www.twitter.com">Twitter</a>
+</div>
+<h4><font color="FF1493">This project is for Binta"s Print</font></h4>
+<body>
+    <main>
+    <body bgcolor=lightblue></body>
+    <img src="C:\Users\USER\OneDrive\Pictures\Screenshots\Screenshot_20230222_082933.png" height="120" width="150"/>
+    <p>Buy four pieces of our product, and get one for free...</p>
+    <p>We sell caps, shirts, hoodies, mugs, Tees, and Sweat-shirts</p>
+    <p><marquee behavior="motion" direction="right"><a href="https://play.google.com/">download our App here</a></marquee></p>
+</main>
+<!-- To open tab content when tab is clicked upon-->
+<Script type="text/javascript">
+    function OpenInfo(evt, About){
+        //Declaration of all variables
+        var i, tabcontent, tablinks;
+
+        //Get all elements with class "tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for(i = 0; i < tabcontent.length; i++){
+            tabcontent[i].style.display = "none";
+        }
+
+        //Getting all elements with class "tablink" and remove the class active
+        tablinks = document.getElementsByClassName("tablinks");
+        for(i = 0; i < tablinks.length; i++){
+            tablinks[i].className = tablinks[i].className.replace("active ", "");
+        }
+        //Shows the current tab and add an "active" class to the button that open the tab
+        document.getElementById(About).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    </script>
+</head>
+</body>
+<style>
+    body {
+        padding: 20px 20px 20px 20px;
+    }
+</style>
+</html>

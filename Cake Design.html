@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lng="en">
+
+<head>
+    <title>Mikun's Cakes</title>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="device-width, inintial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
+    crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">Brand</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-label="Expand-Navigation">
+            <div class="navbar-toggler-icon"></div>
+            </button>
+            <div class="collapse navbar-collapse" id="nav"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="https://www.instagram.com" class="nav-link active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://web.facebook.com/mikunscakes/?_rdc=1&_rdr" class="nav-link">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://instagram.com/tobbyteeeventsandkitchen?igshid=YmMyMTA2M2Y=" 
+                    class="nav-link">Partner</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+
+       <!--This section is for the notification pane-->
+        <div class="alert alert-notification alert-dismissible fade-show" role="alert">
+            <h6>Notification! <a href="https://web.facebook.com/mikunscakes/?_rdc=1&_rdr" class="alert-link">Check new pricing</a></h6>
+            <button class="btn-close fade" aria-label="close" data-bs-dismiss="alert"></button>
+        </div>
+        
+        <!--This section is for the link to other services and whatsapp contact-->
+        <button class="btn right btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Services</button>
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Other Services and Products</h3>
+                        <button class="btn-close" data-bs-dismiss="modal" data-bs-target="#modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Event planning</li>
+                            <li>Event decoration</li>
+                            <li>Gift boxes</li>
+                            <li>Surprises</li>
+                            <li>Frames</li>
+                            <li>Catering services</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer"><a href="https://wa.me/+2348109873136">Talk to us on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--This section is for the two cards on the main page-->
+        <div class="card-group">
+        <div class="card" style="width: 300px; padding: 5pt 5pt;">
+            <img class="card-image-top" src="https://img.taste.com.au/RqRkDQW7/w720-h480-cfill-q80/taste/2016/11/how-to-cut-a-cake-in-half-horizontally-47930-1.jpg"/>
+            <div class="class-body">
+                <h2 class="class-title bg-secondary text-white">Mikun's Cakes</h2>
+                    <h5 class="class-subtitle">Our Bio...</h5>
+                    <div class="class-text" style="text-align: justify;">
+                        <p>There are bakers all over the world and new designs are evolving everyday!
+                        Regardless of the number of brands out there, as you could imagine, our 
+                        creativity has made our products the 'most sought' and referred!!!</p>
+                        <p>We are not just creative, we are a licensed organization that prioritizes 
+                            the nutritional needs of thedifferent age groups.</p>
+                    </div>
+            </div>
+        </div>
+        <div class="card" style="width: 300px; padding: 5pt 5pt; background-color: linen;">
+            <img class="card-image-top" 
+            src="https://img.freepik.com/premium-photo/little-girl-is-wearing-birthday-hat-looking-birthday-cake_120485-8720.jpg"/>
+            <div class="class-body">
+                <h2 class="class-title bg-dark bg-opacity-25 text-white">Spot Point</h2>
+                    <h6 class="class-subtitle" style="margin-left: 2pt;">Our Score Card</h6>
+                    <div class="class-text" style="text-align: justify;">
+                        <ul style="color: darkblue;">
+                            <li>Faster response!</li>
+                            <li>All-budget package!</li>
+                            <li>Taste of royalty!</li>
+                            <li>Unlimited freebies!</li>
+                            <li>Keen attention to detail!</li>
+                            <li>Priority on feedback!</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        </div>
+
+        <!--This section is for the buttons to transact and connect to social media pages-->
+        <button class="btn btn-primary" style="margin: 10pt 10pt;">Buy</button>
+        <a class="btn btn-secondary" href="catalog" style="margin: 10pt 10pt;">Products</a>
+        <a class="btn btn-success" href="Contact" style="margin: 10pt 10pt;">Contact</a>
+        
+        <!--This section is for identification of subscribers pane-->
+        <form>
+            <div class="form-floating"></div>
+            <input type="emil address" id="email" class="form-control" 
+            placeholder="enter email here" required>
+            <label for="email" class="form-label"></label>
+            <button>login</button>
+            </div>
+        </form>
+
+        <form>
+            <label for="subcription" class="form-label">Subscribed to our services?</label>
+            <select class="form-select">
+            <option>No</option>
+            <option>Yes</option>
+            </select>
+        </form>
+
+        <form> <!--This section is for checkbox-->
+            <div class="form-check form-switch">
+            <label for="Buyer" class="form-check-label">Buying?</label>
+            <input type="checkbox" id="email" class="form-check-input">
+        </div>
+        </form>
+
+        <form> <!--This section is for input-group-->
+            <div class="input-group">
+            <label for="text" class="form-label">Enter coupon</label>
+            <input type="text" id="text" class="form-control">
+            <button>Submit</button>
+        </div>
+        </form>
+    </div>
+
+    <style>
+        body {
+            margin: 20pt 20pt;
+        }
+    </style>
+</body>
